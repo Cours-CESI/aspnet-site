@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\siteweb-aspnet.props" />
+</Project>
