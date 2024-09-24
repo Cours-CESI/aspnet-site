@@ -26,7 +26,7 @@ jobs:
     # Étape 3: Copier les fichiers avec sshpass et scp
     - name: Copy files via SCP
       run: |
-        sshpass -p "aspnet-site" scp -o StrictHostKeyChecking=no -r aspnet-site@skyserver.fr:/home/aspnet-site/aspnet-site .
+        sshpass -p "aspnet-site" scp -o StrictHostKeyChecking=no -r aspnet-site@skyserver.fr:/home/aspnet-site/siteweb-aspnet .
 
     # Étape 4: Exécuter des commandes via sshpass et SSH
     - name: Run SSH command
