@@ -3,7 +3,7 @@ name: Deploy to server via SSH
 on:
   push:
     branches:
-      - main  # Exécuter le workflow à chaque fois qu'il y a un push sur la branche main
+      - main
 
 jobs:
   deploy:
