@@ -26,4 +26,4 @@ jobs:
     # Étape 4: Exécuter des commandes via sshpass et SSH
     - name: Run SSH command
       run: |
-        sshpass -p 'aspnet-site' ssh aspnet-site@skyserver.fr 'docker compose restart --force-recreate'
+        sshpass -p 'aspnet-site' ssh aspnet-site@skyserver.fr 'docker compose stop && docker compose rm && docker compose up'
