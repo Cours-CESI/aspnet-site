@@ -21,7 +21,7 @@ jobs:
     # Étape 3: Git Pull
     - name: Run Git Pull on server
       run: |
-        sshpass -p 'aspnet-site' ssh -o StrictHostKeyChecking=no aspnet-site@skyserver.fr 'cd aspnet-site && git pull origin main'
+        sshpass -p 'aspnet-site' ssh -o StrictHostKeyChecking=no aspnet-site@skyserver.fr 'git config --global --add safe.directory /home/aspnet-site/aspnet-site && cd aspnet-site && git pull origin main'
 
     # Étape 4: Exécuter des commandes via sshpass et SSH
     - name: Run SSH command
