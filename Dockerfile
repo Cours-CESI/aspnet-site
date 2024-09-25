@@ -7,10 +7,10 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["siteweb-aspnet/siteweb-aspnet.csproj", "siteweb-aspnet/"]
-RUN dotnet restore "siteweb-aspnet/siteweb-aspnet.csproj"
+COPY ["aspnet-site/siteweb-aspnet.csproj", "aspnet-site/"]
+RUN dotnet restore "aspnet-site/siteweb-aspnet.csproj"
 COPY . .
-WORKDIR "/src/siteweb-aspnet"
+WORKDIR "/src/aspnet-site"
 RUN dotnet build "siteweb-aspnet.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
