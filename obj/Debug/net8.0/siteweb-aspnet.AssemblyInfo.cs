@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("siteweb-aspnet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f2b190a012a272ddad355448383f1641e9e2f2c8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a5ed46d7ed099d9303087a1fd0160c84c918716e")]
 [assembly: System.Reflection.AssemblyProductAttribute("siteweb-aspnet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("siteweb-aspnet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

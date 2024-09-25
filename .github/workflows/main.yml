@@ -18,10 +18,10 @@ jobs:
     - name: Install sshpass
       run: sudo apt-get update && sudo apt-get install -y sshpass
 
-    # Étape 3: Copier les fichiers avec sshpass et scp
-    - name: Copy files via SCP
+    # Étape 3: Git Pull
+    - name: Run Git Pull on server
       run: |
-        sshpass -p "aspnet-site" scp -o StrictHostKeyChecking=no -r . aspnet-site@skyserver.fr:/home/aspnet-site/siteweb-aspnet
+        sshpass -p 'aspnet-site' ssh -o StrictHostKeyChecking=no aspnet-site@skyserver.fr 'git pull origin main'
 
     # Étape 4: Exécuter des commandes via sshpass et SSH
     - name: Run SSH command
